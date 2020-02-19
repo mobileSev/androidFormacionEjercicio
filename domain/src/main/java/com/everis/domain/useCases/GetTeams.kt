@@ -6,5 +6,5 @@ import com.everis.domain.TeamRepository
 
 class GetTeams(private val repository: TeamRepository){
 
-    suspend fun invoke(): Either<TeamError,List<Team>> = repository.get
+   // suspend fun invoke(): Either<TeamError,List<Team>> = repository.get
 }
