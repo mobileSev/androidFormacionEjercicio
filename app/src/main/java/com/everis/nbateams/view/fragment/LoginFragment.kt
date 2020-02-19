@@ -30,4 +30,5 @@ class LoginFragment : Fragment() {
             findNavController().navigate(R.id.toList)
         }
     }
+
 }
