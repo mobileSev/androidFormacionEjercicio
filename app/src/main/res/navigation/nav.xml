@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/listFragment"
-        android:name="com.everis.nbateams.view.fragment.ListFragment"
+        android:name="com.everis.nbateams.view.fragment.NBAListFragment"
         android:label="fragment_list"
         tools:layout="@layout/fragment_list" />
 </navigation>
