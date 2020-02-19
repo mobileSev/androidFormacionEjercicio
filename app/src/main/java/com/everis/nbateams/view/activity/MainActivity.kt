@@ -1,7 +1,8 @@
-package com.everis.nbateams
+package com.everis.nbateams.view.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.everis.nbateams.R
 
 class MainActivity : AppCompatActivity() {
 
