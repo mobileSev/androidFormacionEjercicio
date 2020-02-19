@@ -30,7 +30,8 @@ class NBAListFragment : Fragment() {
 
 
     /*private fun setObservables() {
-        viewModel.state.observe(this, Observer (::updateList))
+        viewModel.state.observe(this, Observer (::updateList))7
+        
     }
 
     fun updateList(state : NBAListViewModel.ViewState?) {
