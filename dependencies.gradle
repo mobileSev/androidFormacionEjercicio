@@ -47,7 +47,6 @@ ext {
             androidxArchCoreTesting        : "androidx.arch.core:core-testing:$androidxArchCoreTesting",
             androidxConstraintLayout       : "androidx.constraintlayout:constraintlayout:$androidxConstraintLayout",
             androidXCoreKtx                : "androidx.core:core-ktx:$androidxCoreKtx",
-            androidxDataBindingCompiler    : "com.android.databinding:compiler:$androidxDataBindingCompiler",
             androidxLifecycleExtensions    : "androidx.lifecycle:lifecycle-extensions:$androidxLifecycleExtensions",
             androidxMultidex               : "androidx.multidex:multidex:$androidxMultidex",
             androidxTestRunner             : "androidx.test:runner:$androidxTestRunner",

@@ -1,4 +1,5 @@
 apply plugin: 'kotlin'
+apply plugin: 'kotlin-android-extensions'
 
 
 
@@ -29,7 +30,7 @@ compileTestKotlin {
 
 dependencies {
 
-//    implementation project(":common")
+    implementation project(":common")
 
     implementation androidLib.koin
     implementation androidLib.koinViewModel

@@ -1,6 +1,6 @@
 package com.everis.domain
 
-class TeamError(
+class LoginError (
     val message : String?
-) {
+){
 }
