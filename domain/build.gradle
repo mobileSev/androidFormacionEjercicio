@@ -1,16 +1,12 @@
-apply plugin: 'java-library'
 apply plugin: 'kotlin'
 apply plugin: 'kotlin-android-extensions'
 
-dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
-}
 
-sourceCompatibility = "7"
-targetCompatibility = "7"
+
+sourceCompatibility = "8"
+targetCompatibility = "8"
 buildscript {
-    ext.kotlin_version = '1.3.61'
+    ext.kotlin_version = '1.3.60'
     repositories {
         mavenCentral()
     }
@@ -30,4 +26,13 @@ compileTestKotlin {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+}
+
+dependencies {
+
+    implementation project(":common")
+
+    implementation androidLib.koin
+    implementation androidLib.koinViewModel
+    implementation androidLib.koinScope
 }

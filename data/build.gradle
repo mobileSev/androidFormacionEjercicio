@@ -1,0 +1,51 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+
+sourceCompatibility = "8"
+targetCompatibility = "8"
+buildscript {
+    ext.kotlin_version = '1.3.61'
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+repositories {
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 29
+
+    }
+    buildTypes {
+        debug {
+
+        }
+    }
+}
+
+
+
+    dependencies {
+
+        implementation project(":domain")
+
+        implementation androidLib.koin
+        implementation androidLib.koinViewModel
+        implementation androidLib.koinScope
+        implementation androidLib.appCompat
+        implementation androidLib.retrofit
+        implementation androidLib.gson
+        implementation androidLib.interceptor
+        // All dependencies
+    }
+
+
